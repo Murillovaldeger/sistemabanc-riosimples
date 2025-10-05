@@ -1,14 +1,17 @@
-#include "Cliente.h"
+#include "cliente.h"
 
+// Cliente iniciliazando vazio
+Cliente::Cliente() {
+  this->nome = "";
+  this->cpf = "";
+}
+
+// Cliente iniciliazando com nome e cpf
 Cliente::Cliente(string nome, string cpf) {
-    this->nome = nome;
-    this->cpf = cpf;
+  this->nome = nome;
+  this->cpf = cpf;
 }
 
-string Cliente::getNome() const {
-    return nome;
-}
-
-string Cliente::getCpf() const {
-    return cpf;
-}
+// Retornar dados privados
+string Cliente::GetCPF() { return this->cpf; }
+string Cliente::GetNome() { return this->nome; }
