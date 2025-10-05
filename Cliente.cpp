@@ -1,5 +1,6 @@
 #include "cliente.h"
 
+
 // Cliente iniciliazando vazio
 Cliente::Cliente() {
   this->nome = "";
