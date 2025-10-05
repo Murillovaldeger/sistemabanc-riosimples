@@ -4,15 +4,17 @@
 #include <string>
 using namespace std;
 
+
 class Cliente {
 private:
-    string nome;
-    string cpf;
+  string nome;
+  string cpf;
 
 public:
-    Cliente(string nome, string cpf);
-    string getNome() const;
-    string getCpf() const;
+  Cliente();
+  Cliente(string nome, string cpf);
+  string GetCPF();
+  string GetNome();
 };
 
 #endif
